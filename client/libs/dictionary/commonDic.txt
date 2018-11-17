@@ -1,0 +1,31 @@
+{
+    "cn": {
+        "_id": "标识",
+        "goodsType":"大类",
+        "goodsName":"名称",
+        "goodsSpec":"规格",
+        "goodsNum":"编码",
+        "goodsPurchPrice":"采购价",
+        "goodsSalePrice": "销售价",
+        "goodsProducer": "生产商",
+        "goodsStore": "库存",
+        "producerNum":"供应商编号",
+        "producerType":"供应商类型",
+        "producerName":"供应商名称",
+        "producerLinkman":"联系人",
+        "producerPhone":"联系电话",
+        "producerAddress":"地址",
+        "producerNotes":"备注"
+    },
+    "en": {
+        "_id": "ID",
+        "goodsType":"Type",
+        "goodsName":"Name",
+        "goodsSpec":"Specification",
+        "goodsNum":"Number",
+        "goodsPurchPrice":"Purch Price",
+        "goodsSalePrice": "Sale Price",
+        "goodsProducer": "Producer",
+        "goodsStore": "Store"  
+    }
+}

@@ -1,0 +1,413 @@
+.header{background:#5093ee;border-bottom:2px solid #fff;}
+.header img{border-radius: 50%;width: 60px;height: 60px;margin-left: 6px;}
+.header span{margin-left: 24px;}
+.header li{float:left;padding: 0 10px;font-size: 32px;line-height:100px;height:100px;color:#f3e6e6;}
+i{margin-right: 5px;}
+.main{background:#ffe;width:100%;margin:0;}
+.sideBar{padding:0;}
+.sideBar ul{background:#d2eefe;border-right:2px solid #fff;}
+.sideBar  li{
+    font-size: 20px;
+    line-height: 40px;
+    height: 60px;
+    position: relative;
+}
+.sideBar  li.active{background:#5093ee;}
+.sideBar i{line-height: 40px;margin-left: 15px;}
+.sideBar li:first-of-type i{line-height:0px;}
+
+/***************************商品管理*********************************************/
+.main-head {margin-bottom: 20px;}
+.main-head li{float: left;margin-top: 15px;margin-left: 22px;}
+.main-head .form-inline .form-group{margin:0;}
+.main-head .exactSelect .form-inline .form-group{margin-top:10px;}
+.exactSelect .form-group label{font-weight: normal;font-size: 14px;}
+.exactSelect .form-group input{height:28px;}
+.goodstable{background:#efe;padding:30px;text-align:center;margin-top: 8px;}
+.goodstable th{text-align:center;}
+.popGoods .form-group{font-size: 16px;text-align: center;width:100%;padding-right: 60px;}
+.popGoods .form-group input{font-size: 16px;width:220px;}
+.popGoods label{display: inline-block;width: 110px;text-align: right;}
+.popGoods p{text-align: center;padding-top: 20px;}
+/***************************上架管理putaway*********************************************/
+.form-inline .form-group{
+    margin:14px;
+}
+.putaway .putaway_header{
+    background-color:#fff;
+    margin-bottom:20px;
+    padding:10px;
+}
+.putaway .putaway_header .box1{
+   display:none;
+}
+.putaway .putaway_header button.saveOne{
+    display:none;
+}
+.putaway .putaway_content{
+    background-color:#fff;
+}
+.putaway .putaway_content tr td:first-child{
+    width:10px;
+}
+.putaway .putaway_content tr td:last-child{
+    width:100px;
+}
+.putaway .putaway_box{
+	background-color:#fff;
+	position:absolute;
+	top:25px;
+	left:0;
+	z-index:10;
+}
+.putaway .putaway_box .content{
+    background-color:#fff;
+}
+.putaway .min-cover{
+    display:none;
+}
+.putaway .min-popup{
+    width:100%;
+    height:100%;
+    background:#666;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:5;
+    opacity:0.5;
+}
+.putaway .popup-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:600px;
+    height:400px;
+    background:#fff;
+    z-index:10;
+    transform:translate(-50%,-50%);
+}
+.putaway .btn_close{
+    position:absolute;
+    right:0;
+    top:0;
+}
+.putaway .jinggao{
+    display:none;
+}
+.putaway .jinggao .popup-box{
+    /*width:0;*/
+    height:0;
+}
+/*************************上架管理结束*********************************/
+/*---------------退货管理-----------------*/
+.min-returns{
+    padding-right:15px;
+    font-size:14px;
+}
+.min-returns .table caption{
+    border-top:1px solid #ddd;
+    padding-top:5px;
+    margin-top:10px;
+    text-align:center;
+    line-height:20px;
+    font-size:16px;
+}
+.form-group{
+    margin:5px;
+}
+.min-returns .form-group input{
+    height:24px;
+}
+.min-returns .form-group textarea{
+    border-radius:5px;
+    border-color:#ccc;
+}
+.min-returns .form-group button{
+    margin:0 15px;
+}
+.min-returns .input-group{
+    width:100%;
+}
+.min-returns .input-group input{
+    height:34px;
+}
+.min-returns .input-group .btn-default{
+    width:100px;
+}
+
+/*弹窗部分*/
+.min-returns-cover{
+    display:none;
+}
+.min-popup{
+    width:100%;
+    height:100%;
+    background:#666;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:0.5;
+}
+.popup-box{
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:550px;
+    height:300px;
+    padding:10px;
+    background:#fff;
+    z-index:10;
+    transform:translate(-50%,-50%);
+}
+.popup-box h1{
+    line-height: 67px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom:1px solid #ccc;
+    height: 55px;
+    margin-bottom: 15px;
+}
+.min-message{
+    position:fixed;
+    left: 36%;
+    top: 30%;
+}
+.true-message{
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    padding:0 15px;
+    background: #d2eefe;
+    font-size:16px;
+    display:none;
+}
+.true-message h3{
+    line-height: 30px;
+    border-bottom: 1px solid #999;
+}
+.true-message p{
+    text-align: center;
+    line-height: 40px;
+}
+/*-------------退货管理结束--------------------------*/
+/*--------------库存管理---------------------------*/
+.min-inv-cover{
+    display:none;
+}
+.code-ret{
+    position:relative;
+}
+.code-ret-ul{
+    position: absolute;
+    left: 40%;
+    padding: 10px;
+    width: 176px;
+    background: #d2eefe;
+}
+.code-ret-ul li{
+    line-height: 30px;
+    height: 30px;
+    padding-left:5px;
+    color: #337ab7;
+    border-bottom:1px solid #ddd;
+}
+.inv-header{
+    padding:15px 10px;
+}
+.insertDatas tr.active{
+    color:#f00;
+}
+/*.inventory h2{
+    line-height: 37px;
+}*/
+/*--------------库存管理结束------------------*/
+
+/*--------------库存管理结束------------------*/
+
+/***************************采购管理*********************************************/
+
+.Purchase{padding-right:20px;}
+.Purchase h3{font-size:20px;text-align:center;margin:20px 0;}
+.Purchase .input{background:#f5f5f5;}
+.Purchase .input div{float:left;margin:10px 10px;}
+.Purchase .input p{float:left;margin:10px 30px;}
+.Purchase label{display:inline-block;width: 70px;font-size:14px;font-weight:normal;text-align:center;}
+.Purchase .input input{width: 80px;height: 30px;border:1px solid #ccc;font-size:12px;text-align:center;}
+.Purchase .input p input:last-of-type{border:1px solid #ccc;width: 150px;height: 35px;margin-left:5px;border-radius: 10%;}
+.Purchase .table{margin-top:30px;}
+.Purchase .table td{margin:0;padding:0;height: 50px;line-height: 50px;font-size:14px;}
+.Purchase .table button{width: 50px;height: 30px;}
+.Purchase .table tr>td:last-of-type{width: 150px;} 
+.Purchase .table input{width: 100%;height:100%;text-align:center;}
+.Purchase td>button{margin:5px;outline:none;}
+.Purchase td,th{text-align:center;font-size:14px;}
+
+
+
+/***************************收货管理*********************************************/
+
+/*弹窗*/
+.delbox{width: 300px;height: 150px;border:1px solid #ccc;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;display:none;}
+.delbox h4{background:skyblue;height: 50px;line-height:50px;font-size:16px;font-weight:bold;color:#fff;text-align: center;}
+.delbox p{margin:40px 30px;}
+.delbox button:last-child{float:right;}
+.Receive{padding-right:20px;}
+.Receive h3{font-size:20px;text-align:center;margin:20px 0;}
+.Receive .input{background:#f5f5f5;}
+.Receive .input div{float:left;margin:10px 10px;}
+.Receive .input p{float:right;margin:10px 50px;}
+.Receive label{display:inline-block;width: 70px;text-align:center;font-size:14px;font-weight:normal;text-align:center;}
+.Receive .input input{width: 80px;height: 30px;border:1px solid #ccc;font-size:12px;text-align:center;}
+.Receive .input p input:last-of-type{border:1px solid #ccc;width: 150px;height: 35px;margin-left:5px;border-radius: 10%;}
+.Receive .table{margin-top:30px;}
+.Receive .table td {margin:0;padding:0;width: 90px;height: 50px;line-height: 50px;}
+.Receive .table tr>td:last-of-type{width: 150px;} 
+.Receive .table input{width: 100%;height:100%;text-align:center;}
+.Receive .table td>button{margin:5px;outline:none;}
+.Receive .table td,th{text-align:center;font-size:14px;}
+
+
+/****************************用户管理******************************/
+#users .users_header .addOne{
+    display:none;
+}
+#users .users_header button.btn_cancelsave{
+    display:none;
+}
+#users .users_header .btn_remendPasword{
+    display:none;
+}
+#users .users_content tr.active{
+    background-color:#f60;
+}
+#users .users_header .newPwd{
+    display:none;
+}
+#users .jinggao{
+    display:none;
+}
+#users .btn_close{
+    position:absolute;
+    right:0;
+    top:0;
+}
+#users .popup-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:600px;
+    background:#fff;
+    z-index:10;
+    transform:translate(-50%,-50%);
+}
+#users .min-popup{
+    width:100%;
+    height:100%;
+    background:#666;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:0.5;
+ }
+ .login-popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:550px;
+    /*height:300px;*/
+    padding:20px;
+    background:#fff;
+    z-index:10;
+    transform:translate(-50%,-50%);
+ }
+ .login .form-group{
+    margin:10px;
+ }
+ .login input{
+    margin:10px 0;
+ }
+ .login button{
+    margin:10px;
+ }
+
+/*****************************用户管理结束***********************************/
+/************************************登录**************************************/
+.login-cover{
+   width:100%;
+   height:100%;
+   background:#666;
+   position:fixed;
+   top:0;
+   left:0;
+   z-index:1;
+   /*opacity:0.5;*/
+}
+.login-popup{
+   position:fixed;
+   top:50%;
+   left:50%;
+   width:550px;
+   /*height:300px;*/
+   padding:20px;
+   background:#fff;
+   z-index:10;
+   transform:translate(-50%,-50%);
+}
+.login .form-group{
+   margin:10px;
+}
+.login input{
+   margin:10px 0;
+}
+.login button{
+   margin:10px;
+}
+.level-box{
+    position:relative;
+
+}
+.levelType{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background: #b3eaf7;
+    width: 100%;
+    display:none;
+}
+.levelType li{
+    padding:8px;
+    cursor:pointer;
+}
+.levelType li.active{
+    background:#3cecff;
+}
+/***********************************登录结束*******************************************/
+
+
+
+/***********************************收银管理*******************************************/
+
+/*-------------------------收银------------------------------------*/
+
+.cashier h3{font-size:20px;text-align:center;font-weight: bold;padding:30px 0;}
+.cashier .cashier_h p{float:left;margin:10px 40px;}
+.cashier .cashier_h p select{font-size:14px;}
+.cashier .cashier_f{height:40px;padding-left:20px;}
+.cashier .cashier_f div{font-weight:bold;padding:15px 0;}
+.cashier .cashier_f p{float:left;width:50%;line-height: 40px;font-size:16px;}
+.cashier .cashier_f .pay span{color:red;}
+.cashier .cashier_f input{border:1px solid #ccc;height:30px;}
+.cashier .cashier_f button{margin:0 20px;}
+.cashier .cashier_f button:nth-of-type(1){margin-right: 80px;}
+.cashier_t{width: 500px;height: 300px;border:1px solid #ccc;background:#fff;display:none;}
+.cashier_t h4{font-size:16px;text-align: center;height:50px;line-height:50px;border-bottom: 1px solid #ccc;margin-bottom: 30px;background:skyblue;color:#fff;}
+.cashier_t .t1 {border-bottom: 1px solid #ccc;}
+.cashier_t .t1 p{padding-left:30px;font-size:30px;line-height:60px;}
+.cashier_t .t2 p{float:left;line-height:35px;margin:0 20px;}
+
+/*#cashier_code{width: 300px;height: 300px;background:#fff;border:1px solid #f5f5f5;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);display:none;}*/
+
+#cashier_code{padding:20px;background:#fff;border:1px solid #f5f5f5;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%)}
+

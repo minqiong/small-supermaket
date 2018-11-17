@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset 默认样式重置 */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, q, em, ul, li, ol, dl, dt, dd, form, article, aside, embed, table, td, th, input, button, legend, fieldset, blockquote, textarea, label, strong, img, cite,figure,select { margin: 0; padding: 0; outline: none; }
+body {color:#666; font-family:'Microsoft 微软雅黑'; font-size: 16px; line-height: 1;  margin: 0 auto; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+table { border-collapse: collapse; }
+ul, li , ol, li{ list-style: none; }
+
+img{ border: none; vertical-align:middle; }
+em, cite, address,i { font-style: normal; font-weight: normal; }
+a { text-decoration:none; }
+
+input { outline:none; border:none; }
+input::-ms-clear { display:none; }
+textarea { outline:none; resize:none; }
+
+article, aside, canvas, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section, summary
+      { 
+        display: block;
+       }
+main{ box-sizing:border-box;}
+/* 清浮动 */
+.clearfix::after{
+    content:"";
+    display: block;
+    height: 0;
+    clear:both;
+    overflow: hidden;
+    zoom:1;
+    visibility: hidden;
+}
+.container{
+    width:980px;
+    min-width:980px;
+    margin:0 auto;
+}
+.fl{float:left;}
+.fr{float:right;}
+.fiximg{
+    /*position:relative;*/
+    top: 260px;
+    right: 90px;
+    position:fixed;
+}

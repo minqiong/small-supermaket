@@ -1,0 +1,73 @@
+<div class="users" id="users">
+	<div class="users_header">
+		<div class="form-inline">
+		  	<div class="form-group">
+		  		<p class="form-control-static">用户名</p>
+		    	<label for="inputPassword2" class="sr-only">用户名</label>
+		    	<input type="text" class="form-control userName" id="inputPassword2" placeholder="用户名">
+		</div>
+		<select class="form-control userLevel"  value="2222">
+			<!-- <option value="u">不限级别</option>
+		    <option value="u0">普通用户</option> -->
+		    <option value="u2">普通管理员</option>
+		    <!-- <option value="u4">普通会员用户</option> -->
+		    <option value="u3">销售员</option>
+		    <option value="u1">高级管理员</option>
+		
+		  </select>
+		<div class="addOne">
+		  	<!-- <div class="form-group">
+  		  		<p class="form-control-static">电话</p>
+  		    	<label for="inputPassword2" class="sr-only">电话</label>
+  		    	<input type="text" class="form-control userTel" id="inputPassword2" placeholder="电话">
+  		  	</div> -->
+		 	<div class="form-group Pwd">
+		  		<p class="form-control-static">密码</p>
+		    	<label for="inputPassword2" class="sr-only">Password</label>
+		    	<input type="password" class="form-control userPassword" id="inputPassword2" placeholder="Password">
+		  	</div>
+		</div>
+		<div class="form-group newPwd">
+	 		<p class="form-control-static">新密码</p>
+	   	<label for="inputPassword2" class="sr-only">Password</label>
+	   	<input type="password" class="form-control userNewPassword" id="inputPassword2" placeholder="Password">
+	 	</div>
+  		<button type="submit" class="btn btn-default btn_remendPasword">修改密码</button>
+		<button type="submit" class="btn btn-default btn_search">搜索</button>
+		<button type="submit" class="btn btn-default btn_add">新增</button>
+		<button type="submit" class="btn btn-default btn_cancelsave">取消</button>
+		</div>  
+	<div class="users_content">
+		<table class="table table-condensed table-hover table-bordered">
+		 	<thead>
+		 		<th></th>
+		 		<th>用户名</th>
+		 		<th>用户级别</th>
+		 		<th>用户密码</th>
+		 		<th></th>
+		 	</thead>
+		 	<tbody>
+		 	</tbody>
+		</table>
+	</div>
+	<div class="addNewUser">
+		<div class="cover">
+			
+		</div>
+		<div class="popup">
+			
+		</div>
+	</div>
+	<div class="jinggao">
+		<div class="min-popup"></div>
+		<div class="popup-box">
+			<div class="alert alert-warning alert-dismissible " role="alert" style="margin:0">
+			  	<button type="button" class="btn_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  	<strong>你确定要删除这条数据吗？ 
+			  	    <button type="button" id="btn_sure" class="btn btn-default btn-xs btn_ensure btn-success">确定</button>
+			  		<button type="button" class="btn btn-default btn-xs btn_cancel btn btn-danger">取消</button>
+			  	</strong> 
+			</div>
+		</div> 
+	</div>
+</div>

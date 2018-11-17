@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<script type="text/javascript" src="../libs/jquery/jquery-3.2.1.js"></script>
+	<style type="text/css">
+		#header img{
+			width:100%;
+			height:100%;
+		}
+		#header {
+			height:200px;
+		}
+		#content .container{
+			margin:0 auto;
+		}
+		#content .container .input{
+			width:100%;
+		}
+		#content .container button{
+			width:100%;
+		}
+		#content .container p{
+			/*text-align:left;*/
+			font-weight:bold;
+			font-size:16px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<img src="../img/timg.jpg"/>
+	</div>
+	<div id="content">
+		<div class="container">
+			<form class="form-inline">
+				<p>应付金额：</p>
+				<div class="form-group">
+				   <label class="sr-only" for="exampleInputEmail3">Email address</label>
+				   <input type="text" class="form-control money" id="exampleInputEmail3" placeholder="应付金额" disabled>
+				 </div>
+				<p>备注：</p>
+				<div class="form-group">
+				   <label class="sr-only" for="exampleInputEmail3">备注</label>
+				   <input type="text" class="form-control" id="exampleInputEmail3" placeholder="备注" disabled>
+				 </div>
+					<button type="button" class="btn btn-success btn_payment">支付</button>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		(function($){
+			var ws;
+			ws = new WebSocket("ws://192.168.191.1:888");
+			var url = location.search;
+			var idx = url.indexOf('?');
+			var params = url.substring(idx+1);
+			params = params.split('&');//['name=laoxie','age=20','sex=male']
+
+			// 3）遍历数组
+			var res = {};
+
+			params.forEach(function(item){
+				// 再以=拆分数组
+				var arr = item.split('=');//['name','laoxie']
+				// 写入对象
+				res[arr[0]] = arr[1];
+			});
+			$('.money').val(res.price);
+			ws.onmessage = function(_msg){
+				// alert(_msg.data);
+			    $('.money').val(_msg.data);
+			}         
+			// 
+			$('.btn_payment').on('click',function(){
+				location.href = 'http://192.168.191.1:8080/Norma/client/html/payment_success.html?money='+res.price;
+				ws.send("支付成功");
+				ws.close();
+			})
+		})(jQuery);
+		
+	</script>
+</body>
+</html>

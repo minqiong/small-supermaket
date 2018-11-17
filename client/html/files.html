@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- <script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script> -->
+</head>
+<body>
+	<!-- <div>
+		<input type="file" name="photos"/>
+		<button class="s">提交</button>
+	</div>
+	<script type="text/javascript">
+		$('.s').click(function(){
+			var v = $('#photos').val();
+			$.post('http://localhost:7777/upload',v,function(result){
+				console.log(result);
+			})
+		})
+	</script> -->
+	<form action="http://localhost:7777/upload" method="post" enctype="multipart/form-data">
+		<input type="file" name="photos"/>
+		<button class="s" type="submit">提交</button>
+	</form>
+</body>
+</html>
+
+	

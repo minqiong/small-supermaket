@@ -1,0 +1,18 @@
+.header{background:#5093ee;border-bottom:2px solid #fff;}
+.header img{border-radius: 50%;width: 60px;height: 60px;margin-left: 6px;}
+.header span{margin-left: 24px;}
+.header li{float:left;padding: 0 10px;font-size: 32px;line-height:100px;height:100px;color:#f3e6e6;}
+i{margin-right: 5px;}
+.main{background:#ffe;}
+.sideBar ul{background:#d2eefe;border-right:2px solid #fff;}
+.sideBar  li{
+    font-size: 20px;
+    line-height: 40px;
+    height: 60px;
+    position: relative;
+}
+.sideBar  li.active{background:#5093ee;}
+.main-head li{float: left;}
+.popGoods{position:fixed;top:50%;left:50%;transform: translate(-50%,-50%);background-color: #cce;padding:40px 70px 20px 70px;border-radius: 6px;box-shadow: 1px 1px 2px 2px #374;display:none;}
+.popGoods label{display: inline-block;width: 80px;text-align: right;}
+.popGoods p{text-align: center;padding-top: 20px;}

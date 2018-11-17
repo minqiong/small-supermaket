@@ -1,0 +1,121 @@
+<div class="min-returns">
+    <form class="form-inline">
+        <div class="form-group code-ret">
+            <label>采购单号（必填）</label>
+            <input type="text" class="form-control ret-code codeBtn" placeholder="请选择已登记商品">
+        </div>
+        <div class="form-group">
+            <label>商品大类</label>
+            <input type="text" class="form-control ret-type">
+        </div>
+        <div class="form-group">
+            <label>商品名称</label>
+            <input type="text" class="form-control ret-name">
+        </div>
+        <div class="form-group">
+            <label>商品规格</label>
+            <input type="text" class="form-control ret-size">
+        </div>
+        <!-- <div class="form-group">
+            <label>退货日期</label>
+            <input type="date" class="form-control ret-date" >
+        </div> -->
+        <div class="form-group">
+            <label>退货数量</label>
+            <input type="text" class="form-control ret-num">
+        </div>
+        <div class="form-group">
+            <label>退货单价</label>
+            <input type="text" class="form-control ret-pri" >
+        </div>
+        <div class="form-group">
+            <label>合计</label>
+            <input type="text" class="form-control ret-total" >
+        </div>
+        <div class="form-group">
+            <label>退货人</label>
+            <input type="text" class="form-control ret-man" >
+        </div>
+        <div class="form-group">
+            <label>供货商</label>
+            <input type="text" class="form-control ret-sup" >
+        </div>
+        <div class="form-group">
+            <button class="btn btn-default min-btn-add" type="submit">增加</button>
+            <button class="btn btn-default alldata" type="submit">全部记录</button>
+            <button class="btn btn-default btnSearch" type="submit">查询</button>
+        </div>
+    </form>
+    <table class="table table-striped table-hover table-bordered">
+        <caption>全部采购退货记录</caption>
+        <thead>
+            <tr>
+                <td>采购单号</td>
+                <td>商品大类</td>
+                <td>商品名称</td>
+                <td>商品规格</td>
+                <!-- <td>退货日期</td> -->
+                <td>数量</td>
+                <td>单价</td>
+                <td>合计</td>
+                <td>退货人</td>
+                <td>供应商</td>
+            </tr>
+        </thead>
+        <tbody class="insertAllData">
+            
+        </tbody>
+    </table>
+    <div class="min-returns-cover">
+        <div class="popup-box">
+            <h1>
+                <span>按商品内容查询</span>
+            </h1>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>商品大类</label>
+                    <input type="text" class="form-control " id="proclass" >
+                </div>
+                <div class="form-group">
+                    <label>供货商</label>
+                    <input type="text" class="form-control " id="supplier" >
+                </div>
+                <div class="form-group">
+                    <label>商品名称</label>
+                    <input type="text" class="form-control " id="proname" >
+                </div>
+                <div class="form-group">
+                    <label>退货人</label>
+                    <input type="text" class="form-control " id="dulman" >
+                </div>
+                <div class="form-group">
+                    <label>商品编码</label>
+                    <input type="text" class="form-control " id="procode" >
+                </div>
+                <!-- <div class="form-group">
+                    <label>退货日期</label>
+                    <input type="text" class="form-control " id="retdata" >
+                </div> -->
+                <div class="form-group">
+                    <label>商品规格</label>
+                    <input type="text" class="form-control " id="prospe" >
+                </div>
+            </form>
+            <p style="text-align:center;margin-top:20px;">
+                <button type="button" class="btn btn-default searchBtn" style="margin-right:10px;">点击查询</button>
+                <button type="button" class="btn btn-default cancle">取消</button>
+            </p>
+        </div>
+        <div class="min-popup">
+        </div>
+    </div>
+    <div class="min-message">
+        <div class="true-message">
+            <h3>
+                <span>温馨提示！</span>
+                <button type="button" class="close true-close" aria-label="Close" style="line-height:30px;"><span aria-hidden="true">&times;</span></button>
+            </h3>
+            <p>请输入...</p>
+        </div>
+    </div>
+</div>

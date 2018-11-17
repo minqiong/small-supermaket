@@ -1,0 +1,80 @@
+<div class="cashier">
+    <h3>超市收银</h3>
+    <div class="cashier_h clearfix">
+        <p><span>日期：</span><span id="date"></span></p>
+        <p><span>流水号：</span><span id="random"></span></p>
+        <p>
+            <span>收银员：</span>
+            <select name="vip" id="">
+                <option value="收银员(1001)">收银员(1001)</option>
+                <option value="收银员(1002)">收银员(1002)</option>
+                <option value="收银员(1003)">收银员(1003)</option>
+                <option value="收银员(1004)">收银员(1004)</option>
+            </select>
+        </p>
+        <p>
+            <span>会员卡：</span>
+            <select name="vip" id="">
+                <option value="会员">无</option>
+                <option value="无">会员</option>
+            </select>
+        </p>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            
+            <tr>
+                <th>序列号</th>
+                <th>商品名称</th>
+                <th>商品类型</th>
+                <th>商品规格</th>
+                <th>商品条码</th>
+                <th>商品价钱</th>
+                <th>商品数量</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+    <div class="cashier_f">
+        <div class="pay clearfix">
+            <!-- <p>品名：<span class="c_name"></span></p> -->
+            <p>单价：<span class="c_price"></span></p>
+        </div>
+        <div class="total clearfix">
+            <p>总计：<span class="t_price"></span></p>
+            <!-- <p>总量：<span class="t_num"></span></p> -->
+        </div>
+        <div>
+            <label for="goods">商品：</label>
+            <input type="text"id="goods" />
+            <button class="btn btn-success">确定</button>
+            <button class="btn btn-success" id="money-pay">现金结账</button>
+        </div>
+        
+
+    </div>
+</div>
+<div class="cashier_t">
+    <h4>收款账单结算:现金</h4>
+    <div class="t1">
+        <p>应收：<span></span></p>
+        <p>现收：<span></span></p>
+        <p>找零：<span></span></p>
+    </div>
+    <div class="t2">
+        <p>本单合计：<span>555.00</span></p>
+        <p>本单已收：<span>555.00</span></p>
+        <p>本单抹零：0.00</p>
+    </div>
+                
+</div>
+<div class="min-returns-cover">
+    <div class="popup-box">
+        <div id="cashier_code">
+        </div>
+    </div>
+    <div class="min-popup"></div>
+</div>

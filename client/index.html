@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>生鲜超市管理系统</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="libs/require.js" data-main="js/index"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1></h1>
+			<ul class="clearfix">
+				<li><img src="img/a3.jpg"/><span>生鲜超超市管理系统</span></li>
+				<li><button class="btn btn-success btn-lg"><i class="glyphicon glyphicon-home"></i>后台主页</button></li>
+				<li><button class="btn btn-warning btn-lg"><i class="glyphicon glyphicon-off"></i>退出登录</button><span class="min_name"></span></li>
+			</ul>
+		</div>
+		<div class="main row">
+			<div class="col-md-3 sideBar" style="width:17%">
+				<ul class="nav nav-pills nav-stacked">
+				    <li role="presentation" class="active">
+				    	<a href="#"><i class="glyphicon glyphicon-th-list"></i><strong>管理菜单</strong></a>
+			    	</li>
+				    <li role="presentation" class="goods">
+				    	<a href="#"><i class="glyphicon glyphicon-gift"></i>商品管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+				    </li>
+				    <li role="presentation" class="producer">
+				    	<a href="#"><i class="glyphicon glyphicon-calendar"></i>供应商管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+				    </li>
+				    <li role="presentation"class="purchase">
+				    	<a href="#"><i class="glyphicon glyphicon-piggy-bank"></i>采购管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+				    </li>
+				    <li role="presentation"class="receive">
+				    	<a href="#"><i class="glyphicon glyphicon-bed"></i>收货管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+				    </li>
+				    <li role="presentation" class="returns">
+				    	<a href="#"><i class="glyphicon glyphicon-random"></i>退货管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+				    </li>
+				    <!-- <li role="presentation" class="inventory">
+				   		<a href="#"><i class="glyphicon glyphicon-hdd"></i>库存管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+				    </li> -->
+				    <li role="presentation" class="putaway">
+				    	<a href="#"><i class="glyphicon glyphicon-export"></i>上架管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+				    </li>
+		    	    <li role="presentation" class="cashier">
+		    	    	<a href="#"><i class="glyphicon glyphicon-object-align-right"></i>收银管理<i class="glyphicon glyphicon-menu-left fr"></i></a>
+		        	</li>
+				    <li role="presentation" class="users">
+				    	<a href="#"><i class="glyphicon glyphicon-user"></i>用户管理
+				    		<i class="glyphicon glyphicon-menu-left fr"></i>
+				    	</a>
+				    </li>
+				</ul>
+			</div>
+			<div class="col-md-9" id="main-content" style="width:83%">
+				<h3 style="line-height:68px;text-align:center;color: #337ab7;font-size: 24px;">欢迎登陆生鲜超市后台管理系统</h3>
+			</div>
+		</div>
+		<div class="modal fade popGoods" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="gridSystemModalLabel">New Item</h4>
+					</div>
+
+					<div class="modal-body">
+						<form class="form-inline">
+						  	<div class="form-group">	
+						      	<p>
+						      		<button  class="btn btn-success" id="commit">新增</button>
+			                        <button  class="btn btn-warning" id="modify">修改</button>
+						      	</p>
+						  	</div>
+						</form>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	</body>
+</html>

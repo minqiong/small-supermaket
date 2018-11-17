@@ -1,0 +1,117 @@
+<div class="putaway">
+	<div class="putaway_header">
+		<div class="form-inline">
+			<div class="box1">
+				<div class="form-group">
+				    <label for="exampleInputName2">商品名称</label>
+				    <input type="text" class="form-control goodsName" id="exampleInputName2" placeholder="Jane Doe">
+				</div>
+				商品类型
+				<select class="form-control goodsType">
+				</select>
+				  商品规格
+				<select class="form-control goodsSpec">
+				</select>
+				<div class="form-group">
+				    <label for="exampleInputName2">数量</label>
+				    <input type="text" class="form-control goodsNum" id="exampleInputName2" value="1">
+				</div>
+				<br/>
+				  商品编号
+				<input class="form-control goodsId" id="disabledInput" type="text"  disabled>
+				进货单价
+				<input class="form-control goodsPurchPrice" id="disabledInput" type="text"  disabled>
+				<div class="form-group">
+				    <label for="exampleInputName2">销售单价</label>
+				    <input type="text" class="form-control goodsSalePrice" id="exampleInputName2">
+				</div>
+				<br/>
+				商品描述
+				<textarea class="form-control goodsRemark" rows="5" cols="50"></textarea>
+				<form action="http://localhost:7777/upload" method="post" enctype="multipart/form-data">
+					<div class="form-group">
+					    <label for="exampleInputFile">选择文件</label>
+					    <input type="file" id="exampleInputFile" class="goodsImg" name="photos">
+					    <!-- <input type="file" id="exampleInputFile" class="goodsImg" name="photots"> -->
+					</div>
+				</form>
+				<br/>
+				<button type="button" class="saveNewOne btn  btn-primary btn-xs">保存</button>
+				<button type="button" class="cancelNewOne btn  btn-primary btn-xs">取消保存</button>
+			</div>
+			<button type="button" class="newOne btn  btn-success btn-xs">新增</button>
+			<button type="button" class="saveOne btn  btn-primary btn-xs">保存</button>
+		  	<div class="form-group">
+		    	<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+		    	<div class="input-group">
+		      		<input type="text" class="form-control words" id="exampleInputAmount" placeholder="Amount">
+		    	</div>
+		  </div>
+		  <button class="btn btn-primary btn_search">搜索</button>
+		</div>
+	</div>
+	<div class="putaway_content">
+		<div class="table-responsive">
+		<!-- 商品大类 商品图片 商品编号 商品规格  商品名称  数量 商品价钱 描述 -->
+		  <table class="table-responsive table table-bordered  table-hover">
+		  		<thead>
+		  			<tr>
+		  				<th></th>
+		  				<th>商品编号</th>
+		  				<th>商品名称</th>
+		  				<th>商品类型</th>
+		  				<th>商品规格</th>
+		  				<th>商品进货单价</th>
+		  				<th>商品销售单价</th>
+		  				<th>数量</th>
+		  				<th>商品图片</th>
+		  				<th>描述</th>
+		  				<th></th>
+		  			</tr>
+		  		</thead>
+		  		<tbody>	
+		  		</tbody>
+		  </table>
+		</div>
+	</div>
+	<div class="min-cover">
+		<!-- 内容 -->
+        <div class="popup-box">
+        	<button type="button" class="close btn_close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="putaway_box">
+            	<table class="table table-hover">
+            		<thead>
+            			<tr>
+            				<th></th>
+            				<th>商品名称</th>
+            				<th>商品类型</th>
+            				<th>商品规格</th>
+            				<th>商品价钱</th>
+            				<th>商品编号</th>
+            				<th></th>
+            				<th></th>
+            			</tr>
+            		</thead>
+            		<tbody>
+            			
+            		</tbody>
+            	</table>
+            </div>
+        </div>
+        <!-- 遮罩层 -->
+        <div class="min-popup">
+        </div>
+    </div>
+    <div class="jinggao">
+    	<div class="min-popup"></div>
+    	<div class="popup-box">
+    		<div class="alert alert-warning alert-dismissible " role="alert" style="margin:0">
+    		  	<button type="button" class="btn_close close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    		  	<strong>你确定要删除这条数据吗？ 
+    		  	    <button type="button" id="btn_sure" class="btn btn-default btn-xs btn_ensure btn-success">确定</button>
+    		  		<button type="button" class="btn btn-default btn-xs btn_cancel btn btn-danger">取消</button>
+    		  	</strong> 
+    		</div>
+    	</div> 
+    </div>
+</div>

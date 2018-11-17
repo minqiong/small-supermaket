@@ -1,0 +1,80 @@
+<div class="inventory">
+    <div class="min-inv-cover">
+        <div class="popup-box">
+            <form class="form-inline">
+                <div class="">
+                    <h1>
+                        <span>按商品内容查询</span>
+                    </h1>
+                    <div class="form-group">
+                        <label>商品大类</label>
+                        <input type="text" class="form-control " id="proclass" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>商品名称</label>
+                        <input type="text" class="form-control " id="proname" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>商品编码</label>
+                        <input type="text" class="form-control " id="procode" >
+                    </div>
+                    <div class="form-group">
+                        <label>商品规格</label>
+                        <input type="text" class="form-control " id="prospe" >
+                    </div>
+                </div>
+                <!-- <div>
+                    <h2>
+                        <span>按人员查询</span>
+                    </h2>
+                    <div class="form-group">
+                        <label>供货商</label>
+                        <input type="text" class="form-control " id="supplier" >
+                    </div>
+                    <div class="form-group">
+                        <label>退货人</label>
+                        <input type="text" class="form-control " id="dulman" >
+                    </div>
+                </div> -->
+            </form>
+            <p style="text-align:center;margin-top:20px;">
+                <button type="button" class="btn btn-default searchBtn" style="margin-right:10px;">点击查询</button>
+                <button type="button" class="btn btn-default cancle">取消</button>
+            </p>
+        </div>
+        <div class="min-popup">
+        </div>
+    </div>
+    <p class="inv-header">
+        <button type="button" class="btn btn-default search-some-Btn" style="margin-right:10px;">按条件查询</button>
+        <button type="button" class="btn btn-default search-all-Btn" style="margin-right:10px;">查询全部商品库存</button>
+        <button type="button" class="btn btn-default addTo_reposity" style="margin-right:10px;">存进仓库</button>
+    </p>
+    <p>
+        <input type="checkbox" id="dan-tips"/>
+        <label for="tips">是否设置库存报警数量</label>
+        <span>当库存数量少于<input type="text" style="width: 50px;border: 1px solid #ddd;padding:5px;height: 25px;" class="dan-num"/>时，商品记录将显示红色报警</span>
+    </p>
+    <!-- <div class="radio">
+        <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+        <label>是否设置库存报警数量</label>
+        input
+    </div> -->
+    <table class="table table-striped table-hover table-bordered">
+        <caption>库存记录</caption>
+        <thead>
+            <tr>
+                <td>商品编码</td>
+                <td>商品大类</td>
+                <td>商品名称</td>
+                <td>商品规格</td>
+                <td>当前库存</td>
+            </tr>
+        </thead>
+        <tbody class="insertDatas">
+            
+        </tbody>
+    </table>
+</div>
